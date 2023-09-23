@@ -76,10 +76,10 @@ const handleSubmit = async (e) => {
     setFormData({
       email:"",
       phone_number:"",
-      team_name: "",
-      group_size: "",
+      team_name:"",
+      group_size:"",
       project_topic:"",
-      category: 0,
+      category:0,
       privacy_poclicy_accepted: false
     });
   } catch (error) {
@@ -250,10 +250,8 @@ const handleSubmit = async (e) => {
           display:"flex",
            justifyContent: "center",
             width:"55%",
-            height:"70%",
-           zIndex: 9999,
-           /* Semi-transparent background overlay */
-
+            height:"90%",
+            zIndex: 9999,
             alignItems:"center"}}
             >
      {showPopup && <SuccessPopup onClose={() => setShowPopup(false)} />}
