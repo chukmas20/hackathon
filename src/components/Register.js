@@ -249,7 +249,7 @@ const handleSubmit = async (e) => {
   <div style={{position:"fixed", top:"0",left:"0", 
           display:"flex",
            justifyContent: "center",
-            width:"70%",
+            width:"55%",
             height:"70%",
            zIndex: 9999,
            /* Semi-transparent background overlay */
