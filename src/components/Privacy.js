@@ -12,9 +12,9 @@ import "./imstyles.css";
 const Privacy = () => {
   return (
     <div className='sm:grid sm:grid-cols-2 
-    lg:grid-cols-2 xl:grid-cols-2 p-5'
+    lg:grid-cols-2 xl:grid-cols-2 '
     >
-        <div style={{color:"white", fontWeight:"bold", padding:"30px"}}>
+        <div style={{color:"white", fontWeight:"bold", padding:"10px"}}>
              <div style={{marginLeft:"90px"}}>
              <div style={{display:"flex",  }}>
                 <p > Privacy Policy and <br/><span style={{color:"#D434FE",}}>Terms </span> </p> 
@@ -26,7 +26,7 @@ const Privacy = () => {
                 it is our aim to always take care of participants
             </p>
              </div>
-            <div className='ml-20' style={{marginTop:"100px", border:"2px purple solid", padding:"50px"}}>
+            <div  style={{marginTop:"100px", border:"2px purple solid", padding:"10px"}}>
                   <p className='text-sm'>
                     At getlinked tech Hackathon 1.0, we value your privacy
                     and are committed to protecting your personal information.
@@ -56,7 +56,7 @@ const Privacy = () => {
                          </span>
                       </div>
                       <button 
-                        style={{backgroundColor:"#D434FE", marginLeft:"120px", marginTop:"20px"}}
+                        style={{backgroundColor:"#D434FE", marginLeft:"50px", marginTop:"20px", }}
                          className="rounded-sm ml-5 text-xs pr-10 pl-10 pt-3 pb-2 text-white font-bold">
                            Read More
                       </button>  
@@ -64,9 +64,9 @@ const Privacy = () => {
             </div>
           </div>
         <div>
-             <div style={{display:"", padding:"40px"}} className="topmost">
-                  <img  src={Vector} alt='vector' className='vec1' style={{width:"450px"}} />
-                  <img  src={Lock}  alt='lock'  className='vec2' style={{width:"450px"}}/>
+             <div style={{display:"", padding:"50px"}} className="topmost">
+                  <img  src={Vector} alt='vector' className='vec1' style={{width:"200px"}} />
+                  <img  src={Lock}  alt='lock'  className='vec2' style={{width:"300px"}}/>
              </div>
         </div>
     </div>

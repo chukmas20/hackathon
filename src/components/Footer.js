@@ -10,9 +10,9 @@ import {  LuPhoneCall  } from "react-icons/lu";
 
 const Footer = () => {
   return (
-    <div>
+    <div style={{marginTop:"200px"}}>
     <div className='sm:grid sm:grid-cols-2 
-    lg:grid-cols-3 xl:grid-cols-3 p-5'
+    lg:grid-cols-3 xl:grid-cols-3 p-5 '
     >
         <div>
              <div>
