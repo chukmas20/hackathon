@@ -36,8 +36,8 @@ const Home = () => {
              </div>
             </div>
          <div className='pr-2'>
-              <img  src={Ignite} width="400px" alt='ignite' className='pl-2 pt-4'/>
-              <img  src={Vector}  alt='ignite' style={{marginLeft:"220px", width:"120px",}} />
+              <img  src={Ignite} width="500px" alt='ignite' className='pl-2 ml-20 pt-4'/>
+              <img  src={Vector}  alt='ignite' style={{marginLeft:"380px", width:"205px",}} />
               <img src={Star1} alt="star"  style={{marginTop:"55px", width:"20px",opacity:"0.5",marginLeft:"50px"}} />
               <div style={{display: "flex"}}>
                 <img src={Image1} alt="globe" style={{width:"400px"}} className='img1'/>
