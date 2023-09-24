@@ -11,7 +11,7 @@ function SuccessPopup({ onClose }) {
         <button className="close-button" onClick={onClose} style={{background:"red",color:"white",}} >
             X
         </button>
-        <img src={Success} alt="Success" />
+        <img src={Success} alt="Success"  />
       </div>
     </div>
   );

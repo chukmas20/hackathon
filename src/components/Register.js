@@ -3,6 +3,8 @@ import Graph from "../assets/graphic.png";
 import axios from "axios";
 import SuccessPopup from './SuccessPopup';
 import "./imstyles.css";
+import { toast } from 'react-toastify';
+
 
 
 
@@ -55,6 +57,7 @@ useEffect(() => {
       console.log(response.data)
     })
     .catch((error) => {
+      toast.error("Something went wrong");
       console.error('Error fetching data:', error);
     });
 }, []);
@@ -82,6 +85,7 @@ const handleSubmit = async (e) => {
       category:0,
       privacy_poclicy_accepted: false
     });
+
   } catch (error) {
     console.error('Error:', error);
   }
@@ -249,8 +253,8 @@ const handleSubmit = async (e) => {
   <div style={{position:"fixed", top:"0",left:"0", 
           display:"flex",
            justifyContent: "center",
-            width:"55%",
-            height:"90%",
+            width:"40%",
+            height:"100%",
             zIndex: 9999,
             alignItems:"center"}}
             >
