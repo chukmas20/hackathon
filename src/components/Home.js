@@ -35,14 +35,17 @@ const Home = () => {
                  <p className='ml-4 font-semibold text-2xl'>00 <span className='text-sm font-extralight'>S</span></p>
              </div>
             </div>
-         <div className='pr-2'>
-              <img  src={Ignite} width="500px" alt='ignite' className='pl-2 ml-20 pt-4'/>
-              <img  src={Vector}  alt='ignite' style={{marginLeft:"380px", width:"205px",}} />
-              <img src={Star1} alt="star"  style={{marginTop:"55px", width:"20px",opacity:"0.5",marginLeft:"50px"}} />
-              <div style={{display: "flex"}}>
-                <img src={Image1} alt="globe" style={{width:"400px"}} className='img1'/>
-                <img src={Man} alt="man" className='img2' style={{width:"428px",opacity:"0.5"}} />
+         <div >
+              <div >
+                  <img  src={Ignite} width="400px" alt='ignite' className='pl-2 ml-20 pt-4'/>
+                  <img  src={Vector}  alt='ignite' style={{marginLeft:"300px", width:"170px",}} />
+                  <img src={Star1} alt="star"  style={{marginTop:"55px", width:"20px",opacity:"0.5",marginLeft:"50px"}} />
+                  <div style={{display: "flex"}}>
+                    <img src={Image1} alt="globe" style={{width:"400px"}} className='img1'/>
+                    <img src={Man} alt="man" className='img2' style={{width:"428px",opacity:"0.5"}} />
               </div>    
+              </div>
+             
          </div>
    </div>
   )
