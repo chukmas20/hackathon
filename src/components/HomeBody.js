@@ -31,7 +31,6 @@ const HomeBody = () => {
        <Sponsors />
        <div  style={{borderBottom:"solid 0.5px grey "}}></div>
        <Privacy  />
-       <div  style={{borderBottom:"solid 0.5px grey "}}></div>
       
 
     </>

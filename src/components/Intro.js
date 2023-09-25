@@ -17,10 +17,10 @@ const Intro = () => {
           
           <div className='flex items-center' id='overview'>
              <img  src={Sata}  alt='sata'  />
-             <img   src={Idea} alt='bulb' style={{width:"300px", marginLeft:"45px"}} />
+             <img   src={Idea} alt='bulb' style={{width:"300px", }} />
           </div>
           <div>
-          <img  src={Arrow}  alt='arrow'  style={{marginLeft:"300px"}}  />
+          <img  src={Arrow}  alt='arrow'  style={{marginLeft:"200px"}}  />
           </div>
       </div>
       <div className='mt-5'>
