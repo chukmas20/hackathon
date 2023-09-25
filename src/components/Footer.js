@@ -13,8 +13,8 @@ const Footer = () => {
   return ( 
     <>
         <div className='sm:grid sm:grid-cols-2 
-    lg:grid-cols-3 xl:grid-cols-3 p-5 '
-     style={{marginTop:"140px"}}
+    lg:grid-cols-3 xl:grid-cols-3 p-5  '
+     style={{marginTop:"140px", marginLeft:"50px"}}
     > 
        <div>
           <img src={Logo}    alt='logo'  />
