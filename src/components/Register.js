@@ -108,6 +108,7 @@ const handleSubmit = async (e) => {
              <p className='text-white mt-5'>CREATE YOUR ACCOUNT</p>
        
     <form className="w-full max-w-lg pic3" onSubmit={handleSubmit}>
+   
   <div className="flex flex-wrap -mx-3 mt-6">
     <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
       <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-first-name">
@@ -254,7 +255,7 @@ const handleSubmit = async (e) => {
           display:"flex",
            justifyContent: "center",
             width:"40%",
-            height:"100%",
+            height:"60%",
             zIndex: 9999,
             alignItems:"center"}}
             >

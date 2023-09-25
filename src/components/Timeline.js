@@ -15,9 +15,9 @@ const Timeline = () => {
          </p>
         </div>  
          <div className='sm:grid sm:grid-cols-2 
-               lg:grid-cols-3 xl:grid-cols-3 mb-10 p-10'
+               lg:grid-cols-3 xl:grid-cols-3 mb-10 p-10 items-center'
             >
-                <div className=' text-white text-right' style={{marginTop:"90px"}}>
+                <div className=' text-white text-right flex-grow ' style={{marginTop:"90px"}} >
                     <p style={{color:"#D434FE"}}> Hackathon Announcement</p>
                     <p>The getlinked tech hackathon 1.0 is formally announced <br /> to the general public and teams
                         begin to get ready to register
@@ -45,7 +45,7 @@ const Timeline = () => {
                        November 18, 2023      
                    </p>
                 </div>
-                <div className='hidden md:block'>
+                <div className='hidden md:block  '>
                     <div style={{marginLeft:"50px",padding:"20px"}}>
                         <div style={{
                             borderLeft:"2px solid purple", marginLeft:"30px",
@@ -197,7 +197,7 @@ const Timeline = () => {
                             </div>
                         </div> 
                    </div>
-                <div className='hidden md:block  text-white'>
+                <div className='hidden md:block  text-white '>
                   <p style={{color:"#D434FE",fontWeight:"bold",marginTop:"150px"}}>
                        November 18, 2023      
                    </p>

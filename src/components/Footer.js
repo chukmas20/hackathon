@@ -38,10 +38,10 @@ const Footer = () => {
                     <FaLinkedinIn color='white' className='mr-2'/>      
               </div> 
         </div>
-        <div>
-             <div>
+        <div >
+             <div className=''>
                  <p className='text-purple-700 font-semibold '>Contact Us</p>
-                 <div className='flex mt-6 items-center flex '>
+                 <div className='flex mt-6 items-center flex  '>
                      <LuPhoneCall  color='white'/>
                      <p className='text-white ml-3'>+234 879 8885</p>
                  </div>

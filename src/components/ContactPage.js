@@ -45,7 +45,7 @@ const ContactPage = () => {
 
   return (
     <div className='sm:grid sm:grid-cols-2 
-    lg:grid-cols-2 xl:grid-cols-2 mt-20'
+    lg:grid-cols-2 xl:grid-cols-2 mt-20 '
     >
          <div>
              <div className='p-10'>
