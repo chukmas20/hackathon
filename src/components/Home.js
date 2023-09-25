@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Title from "../assets/title.png";
 import Star from "../assets/star.png";
 import Ignite from "../assets/ignite.png";
@@ -11,6 +11,43 @@ import "./imstyles.css";
 
 
 const Home = () => {
+  const [countdown, setCountdown] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
+
+  const calculateTimeLeft = () => {
+    const targetDate = new Date('2023-11-23T00:00:00Z'); // Set your target date and time here
+    const currentDate = new Date();
+    const timeDifference = targetDate - currentDate;
+
+    if (timeDifference > 0) {
+      const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+      setCountdown({
+        days,
+        hours,
+        minutes,
+        seconds,
+      });
+    }
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      calculateTimeLeft();
+    }, 1000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
     <div className='sm:grid sm:grid-cols-2 
       lg:grid-cols-2 xl:grid-cols-2 mt-20'
@@ -30,9 +67,10 @@ const Home = () => {
                Register
             </button> 
              <div style={{color:"white", display:"flex",}} className='mt-10'>
-                 <p className='ml-4 font-semibold text-2xl '>00 <span className='text-sm font-extralight'>H</span></p>
-                 <p className='ml-4 font-semibold text-2xl'>00 <span className='text-sm font-extralight'>M</span></p>
-                 <p className='ml-4 font-semibold text-2xl'>00 <span className='text-sm font-extralight'>S</span></p>
+             <p className='ml-4 font-semibold text-2xl '>{countdown.days} <span className='text-sm font-extralight'>D</span></p>
+                 <p className='ml-4 font-semibold text-2xl '>{countdown.hours} <span className='text-sm font-extralight'>H</span></p>
+                 <p className='ml-4 font-semibold text-2xl'>{countdown.minutes} <span className='text-sm font-extralight'>M</span></p>
+                 <p className='ml-4 font-semibold text-2xl'>{countdown.seconds}<span className='text-sm font-extralight'>S</span></p>
              </div>
             </div>
          <div >
