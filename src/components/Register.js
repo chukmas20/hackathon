@@ -4,6 +4,7 @@ import axios from "axios";
 import SuccessPopup from './SuccessPopup';
 import "./imstyles.css";
 import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 
 
 
@@ -245,7 +246,7 @@ const handleSubmit = async (e) => {
     <p className='text-white text-sm ml-3'>I agree with the event terms and conditions  and privacy policy</p>
   </div>
    <div className="w-full mt-4 px-3">
-      <button className="appearance-none block w-full bg-pink-500  text-white border  rounded py-3 px-4 leading-tight focus:outline-none  " id="grid-last-name" type="submit" placeholder="Doe">
+      <button className="appearance-none block w-full bg-pink-500  text-white border  rounded py-3 px-4 leading-tight focus:outline-none  " id="grid-last-name" type="submit">
             Register Now
       </button>
     </div>

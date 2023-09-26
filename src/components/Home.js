@@ -7,6 +7,7 @@ import Image1 from "../assets/image1.png";
 import Vector from "../assets/Vector.png";
 import Man from "../assets/man.png";
 import "./imstyles.css";
+import { Link } from 'react-router-dom';
 
 
 
@@ -61,10 +62,14 @@ const Home = () => {
                 <p className='text-white font-medium'>
                     stand a chance to win a big prize
                 </p>
-                <button 
+             <button 
                 style={{backgroundColor:"#D434FE"}}
-                 className="rounded-sm mt-5  text-xs p-2 text-white font-bold">
-               Register
+                   className="bg-purple-600 text-white font-[Poppins] mt-5 py-2 px-6 rounded
+                      hover:bg-purple-400 duration-500"
+                    >
+                 <Link to={'/register'}>
+                     Register
+                 </Link>
             </button> 
              <div style={{color:"white", display:"flex",}} className='mt-10'>
              <p className='ml-4 font-semibold text-2xl '>{countdown.days} <span className='text-sm font-extralight'>D</span></p>
